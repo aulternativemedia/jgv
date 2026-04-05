@@ -126,7 +126,7 @@ function upcoming(el, events) {
 				let end = new Date(cell.data.end).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
 				dialogBody.innerHTML = `
 				<h3 class="modal-name">${cell.data.name}</h3>
-				<p class="modal-date">${when} &bull; <span class="time">${cell.data.start} &ndash; ${cell.data.end}</span></p>
+				<p class="modal-date">${when} &bull; <span class="time">${start} &ndash; ${end}</span></p>
 				`;
 				let a = document.createElement('a');
 				a.className = 'modal-addr';
