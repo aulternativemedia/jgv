@@ -1,0 +1,30 @@
+name:      "Jacob & the Good Vibes"
+bio:       "SoCal-based reggae fusion band blending R&B soul and Latin grooves, known for high-energy live performances and tight, dynamic musicianship. Check below for booking, music, and upcoming shows."
+photoURL:  "photo.png"
+
+social: # User IDs only — leave blank to hide a platform, reorder as you like.
+  instagram:   "jacob_and_thegoodvibes"
+  spotify:     "40ewy6TdcihVbpBzB9zOgE"
+  youtube:     "@jacobandthegoodvibes"
+  apple:       "jacob-the-good-vibes/1679026261" # requires the numerical identifier after the text name, ex: [username]/1679026261
+  amazon:      "B0BZJXYBX7/jacob-the-good-vibes" # requires the amazon identifier before the text name, ex: B0BZJXYBX7/[username]
+  threads:     ""
+  linkedin:    ""
+  discord:     ""
+  soundcloud:  ""
+  tiktok:      ""
+  facebook:    ""
+  twitter:     ""
+  email:       "jacobandthegoodvibes@gmail.com"
+
+emailSubject:  "Booking Inquiry via LinkHUB"
+
+embeds:
+  - type: spotify
+    id: "1gsRgmkHhzR2l3lVJDnrwg"
+  - type: youtube
+    id: "cn3zEuut3RY"
+
+analytics: "G-12TJD00WW0"
+# GitHub Pages requires a theme declarationDO NOT EDIT / REMOVE
+theme: null
