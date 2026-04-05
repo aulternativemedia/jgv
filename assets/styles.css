@@ -244,7 +244,13 @@ p#profile-tagline {
 		border: 1px solid var(--glass-border);
 	}
 
-	.link::after {
+	body[social="buttons"] #socials .link:last-child {
+		margin-bottom: 0;
+	}
+	body[social="buttons"] #socials .link:first-child {
+		margin-top: 0;
+	}
+	body[social="buttons"] #socials .link::after {
 		content: attr(title);
 	}
 
