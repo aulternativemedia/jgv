@@ -39,15 +39,13 @@ function getEvents(el, id) {
 	}).then(data => {
 		let events = {};
 		data.items.forEach((event) => {
-			start = new Date(event.start.dateTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
-			end = new Date(event.end.dateTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
 			where = event.location.split(",").map(s => s.trim());
 			events[event.start.dateTime.slice(0, 10)] = {
 				name: event.summary,
 				location: event.location,
 				address: where.slice(1).join(", ").replace(", ", "<br/>"),
-				start: start,
-				end: end
+				start: event.start.dateTime,
+				end: event.end.dateTime
 			};
 		});
 		upcoming(el, events)
@@ -124,6 +122,8 @@ function upcoming(el, events) {
 		cell.addEventListener("click", () => {
 			if (cell.data && cell.data.name) {
 				let when = prettyPrint(cell.data.start);
+				let start = new Date(cell.data.start).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+				let end = new Date(cell.data.end).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
 				dialogBody.innerHTML = `
 				<h3 class="modal-name">${cell.data.name}</h3>
 				<p class="modal-date">${when} &bull; <span class="time">${cell.data.start} &ndash; ${cell.data.end}</span></p>
