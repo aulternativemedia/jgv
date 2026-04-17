@@ -3,4 +3,4 @@ palette:    "rasta"    # options: "rasta", "synthwave", "lofi", "sunset", "cyber
 bgstyle:    "waves"    # options: "stripes", "zigzag", "waves", "gradient"
 
 pageStyle:  "dark"     # options: "dark", "light", "neon", "glass" "blobs"
-linkStyle:  "buttons"  # options: "icons", "buttons"
+linkStyle:  "icons"    # options: "icons", "buttons"
