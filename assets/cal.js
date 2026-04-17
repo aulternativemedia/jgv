@@ -54,9 +54,7 @@ function getEvents(el, id) {
 	});
 }
 
-function upcoming(el, events) {
-	console.log('Events:', events);
-	if (Object.keys(events).length == 0) { return; }
+function month(el, events) {
 
 	const container = document.getElementById(el);
 	const today = new Date();
@@ -147,5 +145,33 @@ function upcoming(el, events) {
 		});
 
 		grid.appendChild(cell);
+	}
+}
+
+function list(events, max=3) {
+	try {
+		let max=2; x=0;
+		for (const [key, value] of Object.entries(events)) {
+			// Stop when maxCount is reached
+			if (x >= max) {
+				console.log(`Stopped after ${max} items.`);
+				break;
+			}
+			console.log(`${key}: `, value);
+			x++;
+		}
+	} catch (error) {
+		console.error("Error while iterating object:", error);
+	}
+}
+
+function upcoming(el, events) {
+	console.log('Events:', events);
+	if (Object.keys(events).length == 0) { return; }
+
+	if (window.calStyle = "events") {
+		list(el, events);
+	} else {
+		month(el, events);
 	}
 }
