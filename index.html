@@ -93,6 +93,7 @@
 <script type="text/javascript" src="assets/lazyloader.js"></script>
 <script type="text/javascript" src="assets/cal.js"></script>
 <script>
+let calStyle = {{ site.data.theme.calendar | default: 'events' }};
 //*
 upcoming("events", {
 	"2026-04-17": {name:"Jacob & the Good Vibes", location:"Saloon, 456 E Main St, Ventura, CA 93001, USA", address:"456 E Main St<br/>Ventura, CA 93001, USA", start: "2026-04-17T20:00:00-07:00", end: "2026-04-17T20:45:00-07:00"},
