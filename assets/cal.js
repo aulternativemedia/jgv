@@ -37,16 +37,16 @@ function getEvents(el, id) {
 		}
 		return response.json(); // Parse JSON
 	}).then(data => {
-		let events = {};
+		let events = [];
 		data.items.forEach((event) => {
 			where = event.location.split(",").map(s => s.trim());
-			events[event.start.dateTime.slice(0, 10)] = {
+			events.push({
 				name: event.summary,
 				location: event.location,
 				address: where.slice(1).join(", ").replace(", ", "<br/>"),
 				start: event.start.dateTime,
 				end: event.end.dateTime
-			};
+			});
 		});
 		upcoming(el, events)
 	}).catch(error => {
