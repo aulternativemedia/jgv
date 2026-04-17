@@ -4,3 +4,4 @@ bgstyle:    "waves"    # options: "stripes", "zigzag", "waves", "gradient"
 
 pageStyle:  "dark"     # options: "dark", "light", "neon", "glass" "blobs"
 linkStyle:  "icons"    # options: "icons", "buttons"
+calendar:   "events"   # options: "events", "month"
