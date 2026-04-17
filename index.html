@@ -30,7 +30,7 @@
 	<script src="https://www.youtube.com/iframe_api"></script>
 	{% endif %}
 </head>
-<body class="{{ site.theme.pageStyle | default: 'dark' }} {{ site.theme.header | default: 'banner' }}" social="{{ site.theme.linkStyle | default: 'icons' }}" palette="{{ site.theme.palette | default: 'rasta' }}" vibe="{{ site.theme.bgstyle | default: 'stripes' }}">
+<body class="{{ site.data.theme.pageStyle | default: 'dark' }} {{ site.data.theme.header | default: 'banner' }}" social="{{ site.data.theme.linkStyle | default: 'icons' }}" palette="{{ site.data.theme.palette | default: 'rasta' }}" vibe="{{ site.data.theme.bgstyle | default: 'stripes' }}">
 
 <div id="avatar">
 	{% if site.photoURL %}
