@@ -93,7 +93,7 @@
 <script type="text/javascript" src="assets/lazyloader.js"></script>
 <script type="text/javascript" src="assets/cal.js"></script>
 <script>
-let calStyle = {{ site.data.theme.calendar | default: 'events' }};
+let calStyle = '{{ site.data.theme.calendar | default: 'events' }}';
 //*
 upcoming("events", {
 	"2026-04-15" : [
