@@ -437,7 +437,7 @@ p#profile-tagline {
 	#event-list .event .arrow {
 		color: var(--card-hover);
 		font-size: 1.75em;
-		padding: 1px 1rem 0 1rem;
+		padding: 3px 1rem 0 1rem;
 		transition: var(--aniSpeed);
 	}
 
