@@ -4,4 +4,9 @@ bgstyle:    "waves"    # options: "stripes", "zigzag", "waves", "gradient"
 
 pageStyle:  "dark"     # options: "dark", "light", "neon", "glass" "blobs"
 linkStyle:  "icons"    # options: "icons", "buttons"
-calendar:   "events"   # options: "events", "month"
+
+eventStyle: "list"     # options: "list", "month"
+eventLimit: 3          # note: only valid in list view, maximum number of events to show, there is an upper limit of 10.
+
+# google calendar to display
+calendar:   ""
