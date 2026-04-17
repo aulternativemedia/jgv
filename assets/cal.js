@@ -166,7 +166,7 @@ function list(el, events, max=3) {
 	try {
 		el = document.getElementById(el);
 		el.id = 'event-list';
-		let max = 2, i = 0;
+		let i = 1, max = calendar.limit;
 		const today = new Date();
 
 		for (const date in events) {
@@ -232,7 +232,7 @@ function list(el, events, max=3) {
 function upcoming(el, events) {
 	if (Object.keys(events).length == 0) { return; }
 
-	if (calStyle == "events") {
+	if (calendar.style == "list") {
 		list(el, events);
 	} else {
 		month(el, events);
