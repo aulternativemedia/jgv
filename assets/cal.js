@@ -25,7 +25,7 @@ function getMapDirections(location) {
 }
 
 function getEvents(el, id) {
-	var id = id || `c_9f5ddadfef3ca6cdb4677bf1617ffdc84f7aadb24ebe264195e8c0a1155050ad@group.calendar.google.com`;
+	if (id == "") { return; }
 	let key = `AIzaSyCDoa1zVRXmMfdfnDHXkEy_3MLHJUSfrks`;
 	let RFC3339 = new Date().toISOString();
 
