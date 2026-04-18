@@ -6,7 +6,4 @@ pageStyle:  "dark"     # options: "dark", "light", "neon", "glass" "blobs"
 linkStyle:  "icons"    # options: "icons", "buttons"
 
 eventStyle: "list"     # options: "list", "month"
-eventLimit: 3          # note: only valid in list view, maximum number of events to show, there is an upper limit of 10.
-
-# google calendar to display
-calendar:   ""
+eventLimit: 3          # note: only applies to list view, maximum number of events to show, it will not show more than 10.
