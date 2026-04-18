@@ -390,6 +390,7 @@ p#profile-tagline {
 		align-items: center;
 		background: var(--card-bg);
 		border-radius: var(--radius);
+		border-right: 2px solid transparent;
 		color: var(--text);
 		display: flex;
 		gap: .75em;
@@ -446,6 +447,7 @@ p#profile-tagline {
 
 	#event-list .event:hover {
 		background: var(--card-hover);
+		border-right: 2px solid var(--accent);
 	}
 
 	#event-list .event:hover .arrow {
