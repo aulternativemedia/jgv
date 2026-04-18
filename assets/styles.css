@@ -427,7 +427,10 @@ p#profile-tagline {
 	#event-list .event .time {
 		color: var(--alt-date);
 		font-size: .8em;
-		width: 70px;
+		gap: .33em;
+		margin: 0 .5em 0 -.9em;
+		text-align: right;
+		width: 5em;
 	}
 
 	#event-list .event .name {
