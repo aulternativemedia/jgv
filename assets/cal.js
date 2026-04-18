@@ -164,8 +164,9 @@ function month(el, events) {
 
 function list(el, events, max=3) {
 	try {
-		el = document.getElementById(el);
-		if (el !== null) { el.id = 'event-list'; }
+		el = document.getElementById(el) || document.getElementById('event-list');
+		el.id = 'event-list';
+		el.innerHTML = '';
 		let i = 1, max = calendar.limit;
 		const today = new Date();
 
