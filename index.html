@@ -94,6 +94,7 @@
 <script type="text/javascript" src="assets/cal.js"></script>
 <script>
 const calendar = {
+	"id": "{{ site.calendar }}",
 	"style": "{{ site.data.theme.eventStyle | default: 'list' }}",
 	"limit": {{ site.data.theme.eventLimit | default: 3 | min: 10 }}
 }	
@@ -111,7 +112,7 @@ upcoming("events", {
 	]
 });
 /*/
-getEvents("events");
+getEvents("events", calendar.id);
 //*/
 </script>
 </body>
