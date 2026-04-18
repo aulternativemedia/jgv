@@ -25,6 +25,9 @@ embeds:
   - type: youtube
     id: "cn3zEuut3RY"
 
+### ADVANCED FEATURES #####
+# google calendar to pull events from:
+calendar:  "c_9f5ddadfef3ca6cdb4677bf1617ffdc84f7aadb24ebe264195e8c0a1155050ad@group.calendar.google.com"
+# google analytics account to track interactions with
 analytics: "G-12TJD00WW0"
-# GitHub Pages requires a theme declarationDO NOT EDIT / REMOVE
-theme: null
+
