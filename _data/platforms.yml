@@ -28,6 +28,11 @@ linkedin:
   icon:   "fab fa-linkedin"
   color:  "0A66C2"
 
+merch:
+  url:    "%ID%"
+  icon:   "fas fa-tshirt"
+  color:  "999999"
+
 soundcloud:
   url:    "https://soundcloud.com/%ID%"
   icon:   "fab fa-soundcloud"
