@@ -22,7 +22,7 @@ emailSubject:  "Booking Inquiry via LinkHUB"
 
 callouts:
   - type: merch
-    id: ""
+    id: "https://payhip.com/"
   - type: spotify
     id: "1gsRgmkHhzR2l3lVJDnrwg"
   - type: youtube
