@@ -80,7 +80,9 @@
 
 	<div class="section" id="callouts">
 		{% for callout in site.callouts %}
-			<div class="callout" data-type="{{ callout.type }}" data-id="{{ callout.id }}"></div>
+			{% if callout.id != "" %}
+				<div class="callout" data-type="{{ callout.type }}" data-id="{{ callout.id }}"></div>
+			{% endif %}
 		{% endfor %}
 	</div>
 </div>
