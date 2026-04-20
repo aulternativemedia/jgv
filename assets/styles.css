@@ -367,11 +367,17 @@ p#profile-tagline {
 	}
 
 	.merch-link:not([href=""]) {
+		align-items: center;
 		background: url(../merch.jpg) center center no-repeat;
 		border: 1px solid var(--accent);
 		border-radius: var(--radius);
-		display: block;
+		color: var(--text);
+		display: flex;
+		font-family: "Lexend", sans-serif;
+		font-size: 2.5em;
 		height: 100px;
+		padding-left: 1em;		
+		text-decoration: none;
 	}
 
 	iframe {
