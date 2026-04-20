@@ -135,7 +135,7 @@ body {
 	margin: auto;
 }
 
-.section {
+.section:not(:empty) {
 	margin: 0 0 var(--section-margin) 0;
 }
 
