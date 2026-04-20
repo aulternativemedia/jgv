@@ -367,7 +367,10 @@ p#profile-tagline {
 	}
 
 	.merch-link:not([href=""]) {
-		background: url('merch.jpg') center center no-repeat;
+		background: url(../merch.jpg) center center no-repeat;
+		border: 1px solid var(--accent);
+		border-radius: var(--radius);
+		display: block;
 		height: 100px;
 	}
 
