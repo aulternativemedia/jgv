@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (type == 'merch') {
 			const merch = document.createElement("a");
 			merch.className = 'merch-link';
+			merch.href = id;
+			merch.target = '_external';
 			el.appendChild(merch);
 			return;
 		}
