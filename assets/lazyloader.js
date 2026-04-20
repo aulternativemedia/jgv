@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			merch.className = 'merch-link';
 			merch.href = id;
 			merch.target = '_external';
+			merch.innerHTML = '<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Merch Store';
 			el.appendChild(merch);
 			return;
 		}
