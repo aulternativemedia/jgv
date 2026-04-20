@@ -15,11 +15,14 @@ social: # User IDs only — leave blank to hide a platform, reorder as you like.
   tiktok:      ""
   facebook:    ""
   twitter:     ""
+  merch:       ""
   email:       "jacobandthegoodvibes@gmail.com"
 
 emailSubject:  "Booking Inquiry via LinkHUB"
 
-embeds:
+callouts:
+  - type: merch
+    id: ""
   - type: spotify
     id: "1gsRgmkHhzR2l3lVJDnrwg"
   - type: youtube
@@ -27,7 +30,7 @@ embeds:
 
 ### ADVANCED FEATURES #####
 # google calendar to pull events from:
-calendar:  "c_9f5ddadfef3ca6cdb4677bf1617ffdc84f7aadb24ebe264195e8c0a1155050ad@group.calendar.google.com"
+calendar:  "d12a02335b7a763f46c91f42876aca9cef477aab5046ee4372565d4da969b661@group.calendar.google.com"
 # google analytics account to track interactions with
 analytics: "G-12TJD00WW0"
 
